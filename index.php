@@ -64,7 +64,7 @@ if (isset($_SESSION['usuario_id'])) {
                 <li><a href="juego.php" class="item-seleccionado">
                         <span class="icono"></span> JUGAR TRIVIA <span class="llave"></span>
                     </a></li>
-                <li><a href="#"><span class="icono"></span> ENCICLOPEDIA DE RACCOON CITY</a></li>
+                <li><a href="./pages/enciclopedia.php"><span class="icono"></span> ENCICLOPEDIA DE RACCOON CITY</a></li>
                 <li><a href="#"><span class="icono"></span> ARCHIVOS DE DATOS</a></li>
                 <li><a href="#"><span class="icono"></span> OPCIONES</a></li>
                 <li><a href="#" onclick="reiniciarPantalla()"><span class="icono"></span> CAMBIAR PERSONAJE</a></li>

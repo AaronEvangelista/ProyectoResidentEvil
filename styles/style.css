@@ -1,6 +1,3 @@
-/* ==========================================
-   CONFIGURACIÓN GLOBAL Y FONDO
-=========================================== */
 body {
     margin: 0;
     padding: 0;
@@ -25,9 +22,6 @@ body {
     opacity: 0.6;
 }
 
-/* ==========================================
-   CLASES MÁGICAS (Muestran u ocultan pantallas)
-=========================================== */
 .pantalla-oculta {
     display: none !important;
 }
@@ -36,7 +30,6 @@ body {
     display: flex !important;
 }
 
-/* Este es el contenedor maestro que centra todas las pantallas por igual */
 .fase-contenedor {
     position: absolute;
     top: 0;
@@ -50,9 +43,6 @@ body {
     padding: 20px;
 }
 
-/* ==========================================
-   FASE 1: SELECCIÓN DE PERSONAJES
-=========================================== */
 .grid-personajes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -79,9 +69,6 @@ body {
     transform: scale(1.05);
 }
 
-/* ==========================================
-   FASE 2: MENÚ DE AVISO / SESIÓN
-=========================================== */
 .menu-aviso {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
@@ -122,11 +109,8 @@ body {
     color: #fff;
 }
 
-/* ==========================================
-   FASE 3: MENÚ PRINCIPAL Y HUD
-=========================================== */
 .pantalla-titulo {
-    justify-content: space-between; /* Mantiene logo arriba y HUD abajo */
+    justify-content: space-between;
 }
 
 .logo-area {
@@ -176,10 +160,15 @@ body {
     color: #ffd700;
 }
 
-.icono { margin-right: 15px; }
-.llave { color: #ff4500; margin-left: 10px; }
+.icono {
+    margin-right: 15px;
+}
 
-/* HUD INFERIOR */
+.llave {
+    color: #ff4500;
+    margin-left: 10px;
+}
+
 .hud-area {
     width: 100%;
     display: flex;
@@ -196,7 +185,125 @@ body {
     left: 0;
 }
 
-.hud-izquierda { display: flex; align-items: center; }
-.hud-avatar { width: 32px; height: 32px; margin-right: 15px; border: 1px solid #444; }
-.nombre-jugador { color: #ffd700; font-weight: bold; }
-.puntos-jugador { color: #ff4500; font-weight: bold; font-size: 16px; }
+.hud-izquierda {
+    display: flex;
+    align-items: center;
+}
+
+.hud-avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+    border: 1px solid #444;
+}
+
+.nombre-jugador {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.puntos-jugador {
+    color: #ff4500;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.layout-enciclopedia {
+    justify-content: flex-start;
+    padding: 40px;
+    padding-top: 60px;
+}
+
+.header-enciclopedia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 15px;
+}
+
+.contenedor-archivos {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    height: 70vh;
+    background-color: rgba(10, 10, 10, 0.85);
+    border: 1px solid #444;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+.lista-documentos {
+    width: 35%;
+    border-right: 2px solid #333;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.lista-documentos ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-documentos li {
+    margin-bottom: 10px;
+}
+
+.btn-archivo {
+    width: 100%;
+    background: transparent;
+    color: #aaa;
+    border: 1px solid transparent;
+    padding: 10px;
+    text-align: left;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-archivo:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-archivo.activo {
+    color: #ffd700;
+    border-left: 3px solid #ff4500;
+    background-color: rgba(255, 69, 0, 0.1);
+}
+
+.btn-archivo.bloqueado {
+    color: #555;
+    font-style: italic;
+}
+
+.visor-documento {
+    width: 65%;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #e2e2b6;
+}
+
+.contenedor-archivos ::-webkit-scrollbar {
+    width: 8px;
+}
+
+.contenedor-archivos ::-webkit-scrollbar-track {
+    background: #111; 
+}
+
+.contenedor-archivos ::-webkit-scrollbar-thumb {
+    background: #555; 
+}
+
+.contenedor-archivos ::-webkit-scrollbar-thumb:hover {
+    background: #ff4500; 
+}

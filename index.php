@@ -23,16 +23,16 @@ if (isset($_SESSION['usuario_id'])) {
     <div id="pantalla-seleccion" class="fase-contenedor pantalla-activa">
         <h2 style="color: #8b0000; text-shadow: 2px 2px 0px #000; font-size: 28px;">SELECCIONA TU SUPERVIVIENTE</h2>
         <div class="grid-personajes">
-            <div class="carta-personaje" onclick="elegirPersonaje('leon', 'LEON S. KENNEDY', './img/avatar_leon.png')">
+            <div class="carta-personaje" onclick="elegirPersonaje('leon', 'LEON S. KENNEDY', './img/leon.png')">
                 LEON S. KENNEDY <br><span style="font-size: 12px; color: #aaa;">(1 pista extra)</span>
             </div>
-            <div class="carta-personaje" onclick="elegirPersonaje('chris', 'CHRIS REDFIELD', './img/avatar_chris.png')">
+            <div class="carta-personaje" onclick="elegirPersonaje('chris', 'CHRIS REDFIELD', './img/chris.png')">
                 CHRIS REDFIELD <br><span style="font-size: 12px; color: #aaa;">(+1 resistencia)</span>
             </div>
-            <div class="carta-personaje" onclick="elegirPersonaje('jill', 'JILL VALENTINE', './img/avatar_jill.png')">
+            <div class="carta-personaje" onclick="elegirPersonaje('jill', 'JILL VALENTINE', './img/jill.png')">
                 JILL VALENTINE <br><span style="font-size: 12px; color: #aaa;">(+1 espacio inicial)</span>
             </div>
-            <div class="carta-personaje" onclick="elegirPersonaje('claire', 'CLAIRE REDFIELD', './img/avatar_claire.png')">
+            <div class="carta-personaje" onclick="elegirPersonaje('claire', 'CLAIRE REDFIELD', './img/claire.png')">
                 CLAIRE REDFIELD <br><span style="font-size: 12px; color: #aaa;">(Cambio rápido)</span>
             </div>
         </div>
